@@ -1,0 +1,77 @@
+nav{
+    background-color: #5C3286;
+    height: 5rem;
+}
+
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.menuNav{
+    margin-left: 46%;
+}
+
+.dropdown-toggle{
+    background-color: white;
+    width: 14rem;
+    color: #5c3286;
+    border-radius: 20px;
+    padding-right: 0%;
+}
+
+.menuDrop{
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.btnOrdenes{
+    width: 10rem;
+    background-color: #450F71;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+.card{
+    border-radius: 25px;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+.icono{
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    position: absolute;
+    text-align: center;
+}
+
+.card-body{
+    margin-top: 105px;
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: #450F71;
+    color: white !important;
+}
+
+.encabezadoModal{
+    background-color: #5C3286;
+    color: white;
+}
+
+
+@media (max-width: 992px){
+    .menuNav{
+        margin-left: 46%;
+    }
+    .navbar-collapse{
+        background-color: #5c3286;
+        margin-left: 0px;
+    }
+
+}

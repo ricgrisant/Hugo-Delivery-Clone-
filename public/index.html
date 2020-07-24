@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lugo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand logo" href="#">lugo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menuNav" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <div class="menuDrop">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" onclick="mostrarUsuarios();" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nombre Persona</a>
+                        <div id="usuarios" class="dropdown-menu" aria-labelledby="dropdown01">
+                        </div>
+                    </li>
+                </div>
+                <div class="">
+                    <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btnOrdenes" data-toggle="modal" data-target="#exampleModal">
+                            Ver Ordenes
+                        </button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="container-fluid" style=" margin-top: 2rem;">
+            <div id="bienvedida" class="col" style="margin-bottom: 2rem;">
+                <h1 style="font-weight: 900;color: #5c3286;">¡Hola Nombre!</h1>
+                <h3 style="color: #5c3286;">¿Qué Necesitas?</h3>
+            </div>
+            <div id="categorias" class="row">
+
+            </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+
+    <!-- Modal ordenes del usuario-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 190px;">
+            <div class="modal-content">
+                <div class="modal-header encabezadoModal">
+                    <h5 class="modal-title" id="nombreOrdenes">Modal title</h5>
+                    <button type="button" onclick="location.reload();" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row" id="ordenes" style="border: 1px solid #dee2e6;border-radius: 19px;">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="cerrar" type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #5c3286;border-radius: 20px;width: 120px;" onclick="location.reload()" >Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
